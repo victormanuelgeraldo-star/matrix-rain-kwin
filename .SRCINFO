@@ -1,0 +1,18 @@
+pkgbase = matrix-rain-kwin
+	pkgdesc = Green Matrix glyph-rain overlay when apps open/close on KDE Plasma (KWin Wayland)
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/victormanuelgeraldo-star/matrix-rain-kwin
+	install = matrix-rain-kwin.install
+	arch = any
+	license = GPL-3.0-or-later
+	depends = python
+	depends = python-gobject
+	depends = gtk3
+	depends = gtk-layer-shell
+	depends = noto-fonts-cjk
+	optdepends = kwin: required at runtime (KDE Plasma 6, Wayland)
+	source = matrix-rain-kwin-1.0.0.tar.gz::https://github.com/victormanuelgeraldo-star/matrix-rain-kwin/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = 6a00271a7ea85e925136a9bd352b64187d4f0f4e64eb634dbae193c5042eb910
+
+pkgname = matrix-rain-kwin

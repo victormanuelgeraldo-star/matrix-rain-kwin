@@ -9,7 +9,7 @@ license=('GPL-3.0-or-later')
 depends=('python' 'python-gobject' 'gtk3' 'gtk-layer-shell' 'noto-fonts-cjk')
 optdepends=('kwin: required at runtime (KDE Plasma 6, Wayland)')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('6a00271a7ea85e925136a9bd352b64187d4f0f4e64eb634dbae193c5042eb910')
 install="$pkgname.install"
 
 package() {
