@@ -1,0 +1,13 @@
+[Unit]
+Description=Matrix Rain overlay daemon (green glyph rain on app open/close)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/lib/matrix-rain-kwin/matrixrain-daemon.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

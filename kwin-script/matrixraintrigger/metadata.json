@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "victormanuelgeraldo-star"
+            }
+        ],
+        "Category": "Window Management",
+        "Description": "Plays a green matrix-rain overlay when apps open and close",
+        "EnabledByDefault": false,
+        "Id": "matrixraintrigger",
+        "License": "GPL",
+        "Name": "Matrix Rain Trigger"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}

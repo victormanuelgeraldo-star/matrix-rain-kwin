@@ -1,0 +1,23 @@
+post_install() {
+    cat <<'EOF'
+==> matrix-rain-kwin installed. To enable it (run as your user, NOT root):
+
+      systemctl --user enable --now matrixrain.service
+      kwriteconfig6 --file kwinrc --group Plugins --key matrixraintriggerEnabled true
+      qdbus6 org.kde.KWin /KWin reconfigure
+
+    Then open or close an app. Tune the look in
+    /usr/lib/matrix-rain-kwin/matrixrain-daemon.py (copy it to
+    ~/.local/share/matrixrain/ to edit without root), and restart:
+
+      systemctl --user restart matrixrain.service
+EOF
+}
+
+post_upgrade() {
+    echo "==> Restart the daemon to pick up changes: systemctl --user restart matrixrain.service"
+}
+
+pre_remove() {
+    echo "==> Disable first if you haven't: systemctl --user disable --now matrixrain.service"
+}
